@@ -7,10 +7,10 @@ import ShowSchedule from './components/ShowSchedule';
 function App() {
   return (
     <div className="App">
-      <h2>Registration Service</h2>
+      <h2>Movie Database</h2>
         <BrowserRouter>
           <div>
-            <Link to="/">Student</Link>{' '}
+            <Link to="/">User(formerly Student)</Link>{' '}
             &nbsp;|&nbsp;&nbsp;
             <Link to="/admin">Admin</Link>{' '}
             <Switch>

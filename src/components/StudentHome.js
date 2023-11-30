@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {SEMESTERS} from '../constants'
+import {SEMESTERS} from '../constants';
+import TextField from '@mui/material/TextField';
 
   /* 
    *  display list of terms (year, semester) from SEMESTERS list
@@ -16,7 +17,9 @@ function StudentHome( ) {
     setTermId(row_id);
   }
 
-  const headers = [' ', 'Year', 'Semester'];  
+
+  
+  const headers = [' ', 'Movies', 'Actors'];  
 
   return(
     <div margin="auto" >
@@ -29,14 +32,16 @@ function StudentHome( ) {
         <tbody>
           {SEMESTERS.map((row,idx) => (
             <tr key={idx}>
-              <td><input type="radio"  name="term" onClick={onRadioClick}/></td>
+           {/* <td><input type="radio"  name="term" onClick={onRadioClick}/></td>  */}
+          //
               <td>{row.year}</td>
               <td>{row.semester}</td>
+
             </tr>
           ))}
         </tbody>
       </table>
-      <Link id="viewSchedule" to={`/schedule?termId=${termId}`} > View Schedule </Link>
+      {/* <Link id="viewSchedule" to={`/schedule?termId=${termId}`} > View Schedule </Link> */}
     </div>
   );
 }
