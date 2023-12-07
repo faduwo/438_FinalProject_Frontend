@@ -58,7 +58,7 @@ const AdminHome = ()  => {
     return (
         <div> 
         <div margin="auto" >
-          <h3>Students</h3>
+          <h3>Database Users</h3>
           <h4>{message}</h4>
             <table className="Center"> 
               <thead>

@@ -49,11 +49,12 @@ function AddStudent(props) {
         .catch((err) =>  { setMessage('Error. '+err) } );
     }
 
+    
 
   return (
       <div>
         <Button variant="outlined" color="primary" style={{margin: 10}} onClick={handleClickOpen}>
-          New Student
+          Add Student
         </Button>
         <Dialog open={open} onClose={handleClose}>
             <DialogTitle>New Student</DialogTitle>
